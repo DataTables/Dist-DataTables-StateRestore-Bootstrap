@@ -2,12 +2,14 @@
     "name": "datatables.net-staterestore-bs",
     "description": "StateRestore for DataTables with styling for [Bootstrap](https://getbootstrap.com/docs/3.3/)",
     "main": "js/stateRestore.bootstrap.js",
+    "module": "js/stateRestore.bootstrap.mjs",
     "style": "css/stateRestore.bootstrap.css",
     "types": "./types/stateRestore.bootstrap.d.ts",
     "version": "1.1.1",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
+        "js/**/*.mjs",
         "types/**/*.d.ts"
     ],
     "keywords": [
