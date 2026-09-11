@@ -1,4 +1,4 @@
-/*! StateRestore Bootstrap 3 styling 2.0.0-dev for DataTables
+/*! StateRestore Bootstrap 3 styling 2.0.0 for DataTables
  * Copyright (c) SpryMedia Ltd - datatables.net/license
  */
 
