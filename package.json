@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-staterestore-bs",
     "description": "StateRestore for DataTables with styling for [Bootstrap](https://getbootstrap.com/docs/3.3/)",
-    "main": "js/stateRestore.bootstrap.js",
-    "module": "js/stateRestore.bootstrap.mjs",
-    "style": "css/stateRestore.bootstrap.css",
+    "main": "./js/stateRestore.bootstrap.js",
+    "module": "./js/stateRestore.bootstrap.mjs",
+    "style": "./css/stateRestore.bootstrap.css",
     "types": "./types/stateRestore.bootstrap.d.ts",
     "version": "2.0.1",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "StateRestore",
@@ -37,5 +36,24 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DataTables/StateRestore.git"
-    }
+    },
+    "exports": {
+        ".": {
+            "types": "./types/stateRestore.bootstrap.d.ts",
+            "import": "./js/stateRestore.bootstrap.mjs",
+            "default": "./js/stateRestore.bootstrap.mjs",
+            "require": "./js/stateRestore.bootstrap.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/stateRestore.bootstrap.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }
