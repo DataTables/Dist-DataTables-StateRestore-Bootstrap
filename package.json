@@ -40,9 +40,10 @@
     "exports": {
         ".": {
             "types": "./types/stateRestore.bootstrap.d.ts",
+            "style": "./css/stateRestore.bootstrap.css",
             "import": "./js/stateRestore.bootstrap.mjs",
-            "default": "./js/stateRestore.bootstrap.mjs",
-            "require": "./js/stateRestore.bootstrap.js"
+            "require": "./js/stateRestore.bootstrap.js",
+            "default": "./js/stateRestore.bootstrap.mjs"
         },
         "./js/*": "./js/*",
         "./css": {
